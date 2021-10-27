@@ -1,0 +1,205 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+:root {
+  --underline-intrinsic-width: 8;
+  --underline-width: 12;
+  --underline-color: #f1a1e3;
+  --underline-cap-width: 4px;
+  --underline-offset-y: -2px;
+  --underline-padding-x: 0.12em;
+  --cap-image-left: url(https://files-d4s40otz1.now.sh/left.svg);
+--cap-image-right: url(https://files-4vvqilj8v.now.sh/right.svg);
+}
+body{
+  background-image: url("https://i.pinimg.com/736x/c5/dc/0e/c5dc0ebbb0cf5d8d9b0b2c44bd0e91d9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.main-area {
+  padding: 60px;
+  max-width: 90vw;
+  background: #80d5a6;
+  border: 5px dashed mediumseagreen;
+  box-shadow: 0 0 0 2.5px #226741, 0 0 0 12.5px #fff, inset 0 0 0 2.5px #226741, 0 5px 10px 15px rgba(0, 0, 0, 0.5), inset 0 0 0 6px #fff, inset 0 0 100vw 100vw beige;
+  color: mediumseagreen;
+  font-family: Marcellus, serif;
+  font-size: 3em;
+  text-shadow: 0 2px #fff;
+  text-align: center;
+  margin:15vh;
+}
+.title{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 7.6vh;
+  display: inline;
+   --underline-width-scale: calc(var(--underline-width) / var(--underline-intrinsic-width));
+   padding: 0 calc(var(--underline-padding-x) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
+   box-decoration-break: clone;
+   background-repeat: no-repeat;
+   color: #1221ff;
+   background-image:
+     linear-gradient(180deg, var(--underline-color), var(--underline-color)),
+     var(--cap-image-left),
+     var(--cap-image-right);
+   background-position-x:
+     calc(var(--underline-cap-width) * var(--underline-width-scale)),
+     0,
+     100%;
+   background-position-y: calc(100% - var(--underline-offset-y) * -1);
+   background-size:
+     calc(100% - calc(var(--underline-cap-width) * var(--underline-width-scale) * 2)) calc(var(--underline-width) * 1px),
+     auto calc(var(--underline-width) * 1px),
+     auto calc(var(--underline-width) * 1px);
+
+}
+.image{
+  display: flex;
+  flex-direction: row;
+  padding: 5vh 5vw 0.1vh 8.9vw;
+}
+
+.img-left {
+
+  position: relative;
+  height: 20vh;
+  width: 20vw;
+  border-radius: 10px;
+  border: 7px solid #BADA55;
+
+}
+.img-right {
+
+  position: relative;
+  height: 20vh;
+  width: 20vw;
+  border-radius: 10px;
+  border: 7px solid #BADA55;
+}
+.middle{
+  font-family: "Montserrat";
+  color: #03b6fc;
+  padding: 3vh 3vw 3vh 3vw;
+  font-weight: bold;
+
+}
+.p1{
+  align-self: flex-start;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  color: #03b6fc;
+  text-shadow: 16px;
+  font-weight: bold;
+  margin-top: 3.5vh;
+
+}
+.p2{
+  align-self: flex-end;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  color: #03b6fc;
+  text-shadow: 16px;
+  font-weight: bold;
+  margin-top: 3.5vh;
+}
+.inv{
+  border-bottom: 3px solid violet;
+}
+.inv-p{
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 23px;
+  color: brown;
+  font-weight: bold;
+  word-spacing: 8px;
+}
+.info{
+  display: flex;
+  padding: 15px;
+  border-bottom: 3px solid violet;
+  text-align: center;
+
+}
+.info-1{
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid violet;
+  padding: 25px;
+
+}
+.month{
+  font-family: "Montserrat";
+  text-transform:uppercase;
+  color: brown;
+  font-size: 37px;
+
+}
+.year{
+  font-family: "Montserrat";
+  text-transform:uppercase;
+  color: brown;
+  font-size: 37px;
+
+
+}
+.date{
+  border: 3px solid green;
+  border-radius: 40px;
+  font-family: "Montserrat";
+  text-transform:uppercase;
+  color: brown;
+  font-weight: bolder;
+  font-size: 67px;
+}
+.info-2{
+  display: flex;
+  flex-direction: column;
+  padding-left: 75px;
+}
+.time{
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 33px;
+  color: brown;
+  font-weight: bolder;
+  word-spacing: 10px;
+  border-bottom: 3px solid violet;
+  padding: 15px;
+}
+.destination{
+  padding:23px;
+  padding-left: 45px;
+
+}
+.place{
+  font-family: "Montserrat";
+  text-transform:uppercase;
+  color: brown;
+  font-weight: bolder;
+  word-spacing: 10px;
+  font-size: 47px;
+
+}
+.place-2{
+  font-family: "Montserrat";
+  text-transform:uppercase;
+  color: brown;
+  font-size: 27px;
+}
+.place-3{
+  font-family: "Montserrat";
+  text-transform:uppercase;
+  color: brown;
+  font-size: 27px;
+}
+.end{
+  text-align: center;
+  padding: 23px;
+  font-family: "Montserrat";
+  text-transform:uppercase;
+  color: brown;
+  font-weight: bold;
+  font-size: 27px;
+}
